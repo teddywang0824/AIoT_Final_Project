@@ -1,4 +1,4 @@
-# Project Proposal: 基於邊緣視覺運算與 ESP32 物聯網協同之智慧坐姿監修系統
+# Project Proposal: 基於邊緣視覺運算與 Raspberry Pi 物聯網協同之智慧坐姿監修系統
 
 ## 1. Introduction (Abstract A. to F.)
 *   **[A] Attention (Motivation):** 隨著數位化辦公與遠距學習的普及，現代人長時間面對螢幕，不良坐姿（如烏龜頸、駝背）導致的脊椎疲勞與視力退化已成為重大健康隱憂。建立具備即時性與無干擾性的健康監控系統，成為現代智慧空間環境研究的重要議題。
@@ -28,9 +28,8 @@
 *   **Node C (視覺化儀表板節點):** 負責訂閱感測數據與讀取歷史紀錄檔，透過 Web Server 將資料渲染為圖表與評分介面，提供跨裝置的監控畫面。
 
 ### 3.2 硬體規格書 (Hardware Specifications)
-*   **微控制器核心:** ESP-WROOM-32 (提供 2.4GHz Wi-Fi 連網能力與 GPIO 驅動)。
 *   **視覺輸入設備:** 1080p USB 攝影機模組。
-*   **反饋模組:** WS2812B RGB LED 燈條 (視覺環境警告)、無源蜂鳴器 / OLED 顯示器。
+*   **反饋模組:** ESP32。
 *   **運算單元:** Raspberry Pi 4B 或 PC (執行 MediaPipe 模型運算與架設輕量網頁伺服器)。
 
 ### 3.3 軟體與通訊規範 (Software & Protocol Specs)
